@@ -284,6 +284,7 @@ body{
   width: 100%;
   grid-template-columns: 330px 330px 330px 330px;
   justify-content: center;
+  overflow: hidden;
 }
 
 .follow-img-wrapper{
@@ -340,6 +341,7 @@ body{
   box-shadow: none;
 }
 .btn-follow-us{
+  font-size: 1rem;
   border-radius: 50.383px;
   border: none;
   color: #FFF;
@@ -705,6 +707,15 @@ hr{
     font-size: 0.7rem;
   }
 
+
+  /* Follow-section */
+  .btn-folllow-Gallery{
+    font-size: 1rem;
+  }
+
+  .btn-follow-us{
+    font-size: 1rem;
+  }
     
 }
 
