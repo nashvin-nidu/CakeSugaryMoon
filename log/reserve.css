@@ -1,0 +1,75 @@
+:root{
+    --colorPrimary: #543310;
+    --colorSecondary: #74512D;
+    --colorAccent: #FF7F3E;
+    --ff: "DM Sans", "sans-serif";
+    --h1: bold 64px/72px var(--ff);
+    --h2: bold 39.81px/72px var(--ff);
+    --neutral-color-light: #CBD2E0;
+    --Neutral-color: #D4D2E3;
+}
+
+.reserve-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    align-items: center;
+}
+.title-reserve > h1{
+    font-family: var(--ff);
+    color: var(--colorPrimary);
+    font-weight: 600;
+}
+
+.reserve-img-wrapper{
+    width: 70%;
+}
+.reserve-img-wrapper > img{
+    width: 100%;
+}
+.pargraph-about-us{
+    width: 100%;
+    margin-top: 1rem;
+}
+
+
+/* Buttons */
+
+.reserve-btn-container{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.whatsapp-btn{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 0.5em 3em; 
+    border-radius: 50px;
+    border: none;
+    background-color: #25D366;
+    color: #fff;
+    font-family: var(--ff);
+    font-size: 1.9rem;
+    cursor: pointer;
+}
+
+.insta-btn{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 0.5em 3em; 
+    border-radius: 50px;
+    border: 3px solid var(--colorAccent);
+    background-color: transparent;
+    color: var(--colorAccent);
+    font-family: var(--ff);
+    font-size: 1.9rem;
+    cursor: pointer;
+}
+
+.insta-btn:active{
+    background-color: var(--colorAccent);
+    color: #fff;
+}
