@@ -57,6 +57,7 @@
 }
 
 .btn-showmore{
+    font-size: 1.2rem;
     margin-top: 3rem;
     font-family: var(--ff);
     border-radius: 36.55px;
@@ -64,7 +65,7 @@
     border: 2.5px solid var(--colorSecondary);
     background: transparent;
     color: var(--colorSecondary);
-    padding: 24px 72px;
+    padding: 0.5em 2em;
     /* Button Shadows/Button White 01 */
     box-shadow: 0px 4px 10px 0px rgba(20, 20, 43, 0.04);
 }
@@ -85,5 +86,13 @@
     .img-container {
         grid-template-columns: repeat(auto-fit, 200px);
         grid-template-rows: repeat(auto-fit, 200px);
+    }
+}
+
+/* sm */
+@media (max-width: 640px) {
+    .img-container {
+        grid-template-columns: repeat(auto-fit, 150px);
+        grid-template-rows: repeat(auto-fit, 150px);
     }
 }
