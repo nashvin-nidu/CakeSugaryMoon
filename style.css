@@ -1,4 +1,7 @@
 
+/* This is a Commented CSS, project used a minified version of CSS */
+
+/* Under construction code below */
 /* .service{
   position: fixed;
   text-align: center;
@@ -42,15 +45,19 @@
   --size-9xl: 8rem;
   --size-10xl: 10rem;
 }
+
+/* Universal */
 body{
   margin: 0;
   max-width: 100%;
   overflow-x: hidden;
+  font-family: var(--ff);
 }
 
+a{
+  text-decoration: none;
+}
 
-
-/* Media Quearies */
 .container {
   max-width: 1536px;
   margin-left: auto;
@@ -67,6 +74,8 @@ body{
   gap: 8px;
   align-items: center;
 }
+
+
 
 /* Header Section */
 .header{
@@ -98,9 +107,8 @@ body{
   display: flex;
   gap: var(--size-2xl);
 }
-.headerTextContainer , a{
+.headerTextContainer > a{
   font-size: 1.3rem;
-  text-decoration: none;
   align-items: center;
   font-family: var(--ff);
   color: var(--colorPrimary);
@@ -122,10 +130,14 @@ body{
   font-size: var(--size-2xl);
   cursor: pointer;
 }
-.primarybutton:active{
+.primarybutton:hover{
   color: #fff;
   background-color: var(--colorPrimary);
 }
+
+
+
+
 
 
 /* Hero Section */
@@ -134,7 +146,7 @@ body{
   position: relative;
 }
 
-/* Small display Img has hidden useing display:hide */
+
 .sm-img{
   display: none;
   object-fit: contain;
@@ -214,6 +226,11 @@ body{
   color: var(--colorAccent);
 }
 
+
+
+
+
+
 /* About Us Section */
 .aboutus-container{
   display: flex;
@@ -273,6 +290,12 @@ body{
   box-shadow: 0px 4px 10px 0px rgba(20, 20, 43, 0.04);
 }
 
+
+
+
+
+
+
 /* Follow Section */
 .follow-container{
   display: flex;
@@ -322,26 +345,7 @@ body{
 .follow-button-container{
   display: flex;
   gap: 16px;
-  margin-top: 24px;
-}
-
-.btn-folllow-Gallery{
-  border-radius: 41.534px;
-  background: #fff;
-  box-shadow: 8px 8px 1px 0px #74512D;
-  border-radius: 50.383px;
-  border: 1.136px solid var(--Neutral-color, #D4D2E3);
-  color:var(--colorSecondary);
-  font-family: var(--ff);
-  font-weight: bold;
-  padding: 24px 56px;
-}
-
-.btn-folllow-Gallery:active{
-  position: relative;
-  top: 7px;
-  left: 8px;
-  box-shadow: none;
+  margin-top: 3rem;
 }
 .btn-follow-us{
   font-size: 1rem;
@@ -351,9 +355,32 @@ body{
   font-family: var(--ff);
   font-weight: bold;
   background: var(--colorAccent);
-  padding: 24px 56px;
+  padding: 1em 2.5em;
   box-shadow: 6px 6px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
+.btn-folllow-Gallery{
+  font-size: 1rem;
+  border-radius: 41.534px;
+  background: #fff;
+  box-shadow: 8px 8px 1px 0px #74512D;
+  border-radius: 50.383px;
+  border: 1.136px solid var(--Neutral-color, #D4D2E3);
+  color:var(--colorSecondary);
+  font-family: var(--ff);
+  font-weight: bold;
+  padding: 1em 2.5em;
+}
+
+.btn-folllow-Gallery:active{
+  position: relative;
+  top: 7px;
+  left: 8px;
+  box-shadow: none;
+}
+
+
+
 
 
 /* Contact Us Section*/
@@ -407,10 +434,13 @@ body{
   gap: 20px;
 }
 .mail-link{
+  color: var(--colorPrimary);
   font-family: var(--ff);
   display: inline-flex;
   align-items: center;
   gap: 8px;
+}
+.mail-link:hover{
   text-decoration: underline;
 }
 
@@ -429,6 +459,11 @@ body{
   background: #25D366;
   color: #fff;
 }
+
+
+
+
+
 
 /* Footer Section */
 .footer-container{
@@ -469,10 +504,23 @@ body{
 }
 
 
-.mail-content-container > button{
+.mail-submit-btn{
+  display: flex;
   justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: solid 2px var(--colorAccent);
+  background-color: #fff;
+  color: var(--colorAccent);
+  font-family: var(--ff);
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 1em 2.5em;
 }
-
+.mail-submit-btn:hover{
+  color: #fff;
+  background-color: #FF7F3E;
+}
 .links{
   display: inline-flex;
   gap: 42px;
@@ -547,6 +595,8 @@ hr{
 
 
 
+
+
 /* Media Quearys */
 
 
@@ -579,14 +629,14 @@ hr{
   }
 
   .btn-aboutus-gallery{
-    padding: 0.8em 5em;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    padding: 1em 2.5em;
   }
 
 
   .btn-aboutus-learnmore{
-    padding: 0.8em 5em;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    padding: 1em 2.5em;
   }
 
 }

@@ -48,7 +48,7 @@
     align-items: center;
     padding: 0.5em 3em; 
     border-radius: 50px;
-    border: none;
+    border: 3px solid #25D366;
     background-color: #25D366;
     color: #fff;
     font-family: var(--ff);
